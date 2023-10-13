@@ -216,7 +216,6 @@ Text Section
 			width: 25.8ch;
 			overflow: hidden;
 			white-space: nowrap;
-			animation: type 4.5s  infinite;
 			
 		}
 		
@@ -233,9 +232,19 @@ Text Section
 			overflow: hidden;
 			white-space: nowrap;
       font-size:50px;
+      animation: type 4.5s  infinite;
+
 			
 		}
-		
+    .servises-img img{
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.servises-img img:hover .servises-img img {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
 		
 /*----------------------------------------------------------
  Our Card Image section
@@ -284,7 +293,7 @@ Text Section
 .card .card-img img{
   transition: transform .8s ease;
   cursor:pointer;
-  overflow:hidden;
+
 }
 
 .card :hover .card-img img{
@@ -529,19 +538,19 @@ Contact us Section end
     top: 10px;
     left: 3px;
     font-size: 16px;
-    color: #cccccc;
+    color: #0000 bold;
     transition: all 0.4s ease-out;
   }
   &:focus{
     box-shadow: none;
     outline: none;
     border-width: 2px;
-    border-color: $color-primary;
+    border-color: #0000 bold;
   }
   &:focus + label,
   &.has-value + label {
     top: -15px;
-    color: $color-primary;
+    color: #000;
     font-size: 12px;
   }
 }
