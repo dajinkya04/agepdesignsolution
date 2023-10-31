@@ -21,6 +21,7 @@ html{
 body
 {
   margin: 0;
+  overflow:hidden;
   font-family: 'Poppins', sans-serif;
 
 
@@ -46,34 +47,47 @@ a{
 .navbar {
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     font-family: 'Poppins', sans-serif;
-
-
 }
 .navbar .navbar-brand img {
-  max-width: 100px;
+    max-width:130px;
+
 }
 .navbar .navbar-nav .nav-link {
     font-family: 'Poppins', sans-serif;
     font-size:13px;
     color: #000;
+    padding:0% 10%;
 }
-.navbar .nav-item a button{
-color:#fff;
+.nav-link:hover,
+ .nav-link:active {
+  border-bottom: 0.5px solid #FF0066;
 }
-@media screen and (min-width: 1024px) {
+@media screen and (max-width: 1720px){
+  .navbar {
+    letter-spacing: 0.1em;
+  }
+  .navbar .navbar-nav .nav-link {
+    padding: 0.2em 0.5em;
+  }
+ .nav-link:hover,
+ .nav-link:active {
+  border-bottom: 1px solid #FF0066;
+}
+}
+@media screen and (max-width: 1024px) {
   .navbar {
     letter-spacing: 0.1em;
   }
   .navbar .navbar-nav .nav-link {
     padding: 0.5em 1em;
   }
- 
-}
-.nav-link:hover,
+ .nav-link:hover,
 .nav-link:active {
   border-bottom: 1px solid #FF0066;
 }
-@media screen and (min-width: 768px) {
+}
+
+@media screen and (max-width: 768px) {
   .navbar .navbar-brand img {
     max-width: 7em;
   }
@@ -84,7 +98,6 @@ color:#fff;
   }
  
 }
-
 .contact-info p,
 .contact-info a {
   font-size: 0.9em;
@@ -156,6 +169,8 @@ color:#fff;
     top: 325px;
 
 }
+
+
 /* Floating Social Media Bar Style Ends Here */
 /*-------------------------------------------------
  Animation Social Media Icon Section End -----
@@ -164,6 +179,7 @@ color:#fff;
 /*----------------------------------- 
 Text Section
 ------------------------------------*/
+
 .text-header {
   font-family: 'Poppins', sans-serif;
   height:100vh;
@@ -196,6 +212,25 @@ Text Section
   z-index: -1;
  }
 
+@media only screen and (max-width: 768px)  {
+  .text-header {
+  height: 50vh;
+  aspect-ratio:2/1;
+
+  }
+  .text-header video{
+    width: 70vw;
+    height: 40vh;
+    object-fit: cover;
+    position: absolute;
+  left: 15%; 
+  right: 0;
+  top: -20%;
+  bottom: 0;
+  z-index: -1;
+  }
+}
+
 .servises-icon img {
   width:100px;
   height:100px;
@@ -207,13 +242,17 @@ Text Section
   font-size:15px;
 }
 
+.ani-text{
+  margin-left:22%;
+}
+ 
 .ani-text	h1 {
      margin-top: 5%;
-      margin-left: 45%;
+      margin-left: 44%;
 			color: #000;
       font-weight:800;
 			// font: 600 2.5em roboto;
-			width: 25.8ch;
+			width: 35ch;
 			overflow: hidden;
 			white-space: nowrap;
 			
@@ -228,14 +267,13 @@ Text Section
     .ani-text	h2 {
 			color: #000;
       font-weight:800;
-			width: 25.9ch;
+			width: 27ch;
 			overflow: hidden;
 			white-space: nowrap;
       font-size:50px;
-      animation: type 4.5s  infinite;
-
-			
+      animation: type 4.5s  infinite;			
 		}
+
     .servises-img img{
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
@@ -246,6 +284,12 @@ Text Section
   transform: scale(1.08);
 }
 		
+//     @media only screen and (min-width: 768px)  {
+//   .ani-text h2,h1{
+//     font-size:22px;
+//     margin-right:15%
+//   }
+// }
 /*----------------------------------------------------------
  Our Card Image section
  ---------------------------------------------------------*/
@@ -349,8 +393,10 @@ Text Section
     padding: 170px 0;
 }
 .section-wrap {
-    padding: 60px 0;
-   background: linear-gradient(#FF0068, #DA0034);
+  // border: 2px solid black;
+  padding: 25px;
+  background-repeat: no-repeat;
+  background-size: auto;
     overflow: hidden;
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -385,7 +431,7 @@ Text Section
     text-decoration: none;
     text-align: center;
     letter-spacing: 0.14em;
-    border-radius: 3px;
+    border-radius: 50px;
     border: none;
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
@@ -410,7 +456,7 @@ Text Section
 
 .section-wrap--md .btn-lg, .btn-lg.btn-button {
     font-size: 13px;
-    padding: 0 34px;
+    padding: 0 24px;
     line-height: 46px;
 }
 
@@ -465,9 +511,24 @@ Text Section
 /*---------------------------------------------------------
  About section
  -----------------------------------------------------------*/
- .vision-section .abt-img{
- position: relative;
-   }
+//  .vision-section .abt-img{
+//  position: relative;
+//    }
+   .vision-section .abt-img {
+        position: relative;
+        display: inline-block;
+        padding:10%;
+    }
+  .vision-section .abt-img .abt-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .vision-section .abt-img:hover .abt-top {
+        display: inline;
+    }
  .vision-section p{
   position:absolute;
   bottom: 8px;
@@ -626,7 +687,7 @@ Contact us Section end
   margin-bottom: 30px;
 }
 .footer-logo img {
-    max-width: 200px;
+    max-width: 100px;
 }
 .footer-text p {
   margin-bottom: 14px;
@@ -739,3 +800,105 @@ Contact us Section end
   font-size: 14px;
   color: #878787;
 }
+
+
+
+/*---------------------Services Page Section-----------------------*/
+
+.service-topsection video {
+width:35%;
+}
+
+/* Icon section */
+.services-iconsection {
+  text-align: center;
+  margin: 40px;
+  padding:3px;
+}
+
+.services-iconsection .link img{
+  height:9rem;
+}
+
+.services-iconsection .link p {
+  font-size: 1em;
+  margin-top: 20px;
+  color:#000;
+  font-weight:900;
+}
+.link p:hover{
+  color:#fff;
+}
+
+.services-iconsection .card-top {
+        position: relative;
+        display: inline-block;
+    }
+  .services-iconsection .card-top .img-top {
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 99;
+    }
+    .services-iconsection .card-top:hover .img-top {
+        display: inline;
+    }
+
+.services-iconsection .link {
+  display: block;
+  background:#f8f8f8;
+  padding:20px;
+}
+
+.services-iconsection .link:hover {
+  cursor: pointer;
+  background: #FF0066;
+  color: #fff;
+  transition: background-color 0.9s ease;
+}
+
+ .services-con h2{
+  font-size:3rem;
+ }
+ .services-con ul li{
+  font-weight:800;
+ }
+.success {
+  border: 1px solid #FF0066;
+  color: #FF0066;
+  padding: 1px 20px;
+  font-size: 16px;
+  border-radius:50px;
+}
+
+@media screen and (max-width: 768px){
+  .service-topsection p{
+    font-size:20px;
+    margin:15px;
+  }
+ .service-topsection img {
+ height: 20rem;
+}
+/* Icon section */
+.services-iconsection {
+  text-align: center;
+  margin: 40px;
+  padding:3px;
+}
+
+.services-iconsection .link img{
+  height:5rem;
+}
+
+.services-iconsection .link p {
+  font-size: 0.5em;
+  margin-top: 20px;
+  color:#000;
+}
+
+.services-con {
+  font-size:12px;
+}
+}
+/*----------------------------------- End Services Section---------------------*/
