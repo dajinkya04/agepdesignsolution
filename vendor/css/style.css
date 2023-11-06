@@ -107,7 +107,9 @@ a{
 .contact-info a {
   padding-right: 0;
 }
-
+@media screen and (max-width: 604px){
+  
+}
 
 /*-------------------------------------------------
  Animation Social Media Icon Section End -----
@@ -169,7 +171,11 @@ a{
     top: 325px;
 
 }
-
+@media only screen and (max-width: 604px){
+  .fl-fl{
+    display:none;
+  }
+}
 
 /* Floating Social Media Bar Style Ends Here */
 /*-------------------------------------------------
@@ -232,9 +238,9 @@ Text Section
 }
 
 .servises-icon img {
-  width:100px;
-  height:100px;
-  padding:10px;
+  width:50%;
+  height:100%;
+  padding:2%;
   
 
 }
@@ -284,6 +290,38 @@ Text Section
   transform: scale(1.08);
 }
 		
+    @media only screen and (max-width: 604px) {
+      .servises-icon img{
+        height:70%;
+        width:70%;
+      }
+      .text-header{
+        width:100%;
+        height:100%
+      }
+      .text-header video{
+      height:100%;
+      // padding:10%;
+      }
+       .ani-text{
+        margin-left:20px;
+        width:100%;
+       }
+       .ani-text h1{
+      font-size:20px;
+
+      }
+      .ani-text h2{
+      font-size:20px;
+     font-weight:800;
+			width: 27ch;
+			overflow: hidden;
+			white-space: nowrap;
+      }
+     
+		
+
+    }
 //     @media only screen and (min-width: 768px)  {
 //   .ani-text h2,h1{
 //     font-size:22px;
@@ -806,30 +844,14 @@ Contact us Section end
 /*---------------------Services Page Section-----------------------*/
 
 .service-topsection video {
-width:35%;
+width:45%;
 }
 
 /* Icon section */
 .services-iconsection {
   text-align: center;
-  margin: 40px;
-  padding:3px;
+  padding:15px;
 }
-
-.services-iconsection .link img{
-  height:9rem;
-}
-
-.services-iconsection .link p {
-  font-size: 1em;
-  margin-top: 20px;
-  color:#000;
-  font-weight:900;
-}
-.link p:hover{
-  color:#fff;
-}
-
 .services-iconsection .card-top {
         position: relative;
         display: inline-block;
@@ -878,7 +900,7 @@ width:35%;
     margin:15px;
   }
  .service-topsection img {
- height: 20rem;
+ height: 25rem;
 }
 /* Icon section */
 .services-iconsection {
@@ -902,3 +924,26 @@ width:35%;
 }
 }
 /*----------------------------------- End Services Section---------------------*/
+
+/*------------------------------------------ Contact Us------------------------*/
+.contact-us .btn {
+	padding: 14px 26px;
+	font-weight: 700;
+	font-size: 13px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+}
+.contact-us .btn-danger {
+	background-color: #e34c43;
+	border-color: #e34c43;
+}
+.contact-us #gmap_canvas
+{
+    filter: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><filter id="g"><feColorMatrix type="matrix" values="0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0.3 0.3 0.3 0 0 0 0 0 1 0"/></filter></svg>#g');
+    -webkit-filter: grayscale(90%);
+    filter: grayscale(90%);    
+    filter: progid:DXImageTransform.Microsoft.BasicImage(grayScale=1);
+}
+.contact-us .map-box2{
+z-index:9999; right:60px; width:360px;	
+} 
