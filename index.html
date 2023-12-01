@@ -11,6 +11,7 @@
   <meta name="keywords" content="">
   <meta name="author" content="AGEP Design Solution">
   <link rel="shortcut icon" href="./vendor/img/logo/logo-02.png">
+  <script src="https://static.elfsight.com/platform/platform.js" defer></script>
 
   <title>Agep Design Solutions </title>
   <!-- Font Awesome -->
@@ -26,42 +27,99 @@
 </head>
 
 <body>
-  <!-- Header Section Nav Bar -->
+  <!-------------------- Header Section Nav Bar ----------------------->
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar bg-white navbar-expand-xl navbar-dark bg-body-tertiary shadow ">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
+        <a href="#" class="navbar-brand" href="index.html">
           <img src="./vendor/img/logo/logo.png" class="img-fluid" alt="logo">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" id="navbar-toggler-button" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <div class="toggle">
+            <span class="line-toggle"></span>
+            <span class="line-toggle"></span>
+            <span class="line-toggle"></span>
+          </div>
+          <!-- <span class="navbar-toggler-icon"></span> -->
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2">
-            <li class="nav-item">
-              <a class="nav-link mt-1" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mt-1" href="protfilio.html">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mt-1" href="services.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a href="contact.html" class="text-light"><button type="button" class="btn btn-dark p-1"><small>Get in
-                    Touch</small></a>
-            </li>
-          </ul>
-          <!-- <div class="contact-info d-md-flex">
-            <p><a href="mailto:design@agep-international.com">design@agep-international.com</a></p>
-            <p> +91-8390375254 </p>
-            <a href="#0"><button type="button" class="btn btn-outline-dark">Get in Touch</a>
-          </div> -->
+        <div class="offcanvas offcanvas-end bg-white text-black" id="navbarOffcanvas" tabindex="-1"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-black" id="offcanvasNavbarLabel">Agep Design Soluction</h5>
+            <button type="button" class="btn-close btn-close-black text-reset" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <ul class="navbar-nav ms-auto mb-2">
+                <li class="nav-item dropdown">
+                  <a class="nav-link mt-1 nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false" href="services.html">Services</a>
+                  <div class="dropdown-menu mt-3">
+                    <ul>
+                      <li><a class=" dropdown-item" href="services.html" style="color:#F77700">Branding</a>
+                      </li>
+                      <li><a class="dropdown-item" href="services.html">Brand Strategy</a></li>
+                      <li><a class="dropdown-item" href="services.html">Corporate Stationery</a></li>
+                      <li><a class="dropdown-item" href="services.html">Logo Design</a></li>
+                      <li><a class="dropdown-item" href="services.html">Brand Manual</a></li>
+                      <li><a class="dropdown-item" href="services.html">Collateral Design</a></li>
+                      <li><a class="dropdown-item" href="services.html">Social Media Graphics</a></li>
+                      <li><a class="dropdown-item" href="services.html">Print & Digital Media</a></li>
+
+                    </ul>
+                    <ul>
+                      <li><a class="dropdown-item" href="services.html" style="color:#F77700">Digital
+                          Marketing</a></li>
+                      <li><a class="dropdown-item" href="services.html">Social Media Marketing</a></li>
+                      <li><a class="dropdown-item" href="services.html">Email Marketing</a></li>
+                      <li><a class="dropdown-item" href="services.html">Pay Per Click Ads</a></li>
+                      <li><a class="dropdown-item" href="services.html">Reports & Analysis</a></li>
+                      <li><a class="dropdown-item" href="services.html">Strategies</a></li>
+                    </ul>
+                    <ul>
+                      <li><a class="dropdown-item" href="services.html" style="color:#F77700">Web
+                          Development</a></li>
+                      <li><a class="dropdown-item" href="services.html">User Experience Design</a></li>
+                      <li><a class="dropdown-item" href="services.html">User Interface Design</a></li>
+                      <li><a class="dropdown-item" href="services.html">Website Analysis</a></li>
+                      <li><a class="dropdown-item" href="services.html">Website Development</a></li>
+                      <li><a class="dropdown-item" href="services.html">E-commerce Web Design</a></li>
+                      <li><a class="dropdown-item" href="services.html">Website Maintenance & Support</a></li>
+                    </ul>
+                    <ul>
+                      <li><a class="dropdown-item" href="services.html" style="color:#F77700">SEO</a></li>
+                      <li><a class="dropdown-item" href="services.html" target="#branding">Keyword Analysis</a></li>
+                      <li><a class="dropdown-item" href="services.html">Landing Page Optimization</a></li>
+                      <li><a class="dropdown-item" href="services.html">Backlinks</a></li>
+                      <li><a class="dropdown-item" href="services.html">Influencer Marketing</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link mt-1" href="about.html">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link mt-1" href="protfilio.html">Work</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="contact.html" class="text-light p-2"><button type="button"
+                      class="btn btn-dark p-1"><small>Get in
+                        Touch</small></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
   </header>
+  <!----------------------- Header Section End ------------------->
   <section>
     <!-- Floating Social Media bar Starts -->
     <div class="float-sm">
@@ -84,14 +142,21 @@
     </div>
     <!-- Floating Social Media bar Ends -->
   </section>
+
   <section>
-    <div class="container-fluid text-header">
-      <div class="row  mt-xxl-5 mt-lg-5 mt-md-5 mt-sm-5">
-        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
-          <h2>The <span><b>DIGITAL </b></span>Era</h2><br>
-          <h3>Design & Marketing Hub</h3>
-          <div class="ratio ratio-21x9">
-            <video id="myVideo" src="./vendor/video/front_design.mp4" loop="true" autoplay="true" muted></video>
+    <div class="container text-header">
+      <div class="row mt-xxl-5 mt-lg-5 mt-md-5 mt-sm-5">
+        <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
+          <div class="text-black d-flex flex-column justify-content-start">
+            <div class="display-6 fw-bolder">
+              A Creative hub for Interaction & innovation
+            </div>
+            <div id="dynamicContent" class="overflow-hidden focused display-6 fw-bolder">
+              Run Live Example
+            </div>
+            <div class="ratio ratio-21x9">
+              <video id="myVideo" src="./vendor/video/front_design.mp4" loop="true" autoplay="true" muted></video>
+            </div>
           </div>
         </div>
       </div>
@@ -100,28 +165,30 @@
 
   <section>
     <div class="container servises-icon">
-      <h2 class="text-center ">AGEP Design Solutions Provide </h2>
+      <h2 class="justify-content-start">We're here For Your Brand's Digital Evolution With </h2>
       <div class="row mt-5">
         <div class="col-lg-3 col-md-3 col-sm-3 text-center">
-          <img src="./vendor/img/icon/data_drivenstrategies.png" class="img-fluid" alt="drivenstrategies our Services">
-          <h5>Data Drive-Strategies</h5>
+          <img src="./vendor/img/icon/data_drivenstrategies.png" class="img-fluid w-50"
+            alt="drivenstrategies our Services">
+          <h5 class="mt-1">Data Drive-Strategies</h5>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 text-center">
-          <img src="./vendor/img/icon/multichannel_experties.png" class="img-fluid"
+          <img src="./vendor/img/icon/multichannel_experties.png" class="img-fluid w-50"
             alt="multichannel experties Services">
-          <h5>Multichannel Experties</h5>
+          <h5 class="mt-2">Multichannel Experties</h5>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 text-center">
-          <img src="./vendor/img/icon/customized _solutions03.png" class="img-fluid" alt="">
-          <h5>Customized Solutions</h5>
+          <img src="./vendor/img/icon/customized _solutions03.png" class="img-fluid w-50" alt="">
+          <h5 class="mt-2">Customized Solutions</h5>
         </div>
         <div class="col-lg-3 col-md-3 col-sm-3 text-center">
-          <img src="./vendor/img/icon/scalable_growth.png" class="img-fluid" alt="">
-          <h5>Scalable Growth</h5>
+          <img src="./vendor/img/icon/scalable_growth.png" class="img-fluid w-50" alt="">
+          <h5 class="mt-2">Scalable Growth</h5>
         </div>
       </div>
     </div>
   </section>
+
   <section>
     <div class="container ani-text">
       <div class="row p-5">
@@ -133,6 +200,7 @@
       </div>
     </div>
   </section>
+
   <section>
     <div class="container">
       <div class="row p-5 servises-img">
@@ -141,12 +209,12 @@
           <h5 class="text-center mt-3">BRANDING</h5>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 mb-3">
-          <img src="./vendor/img/banner/home/seo.jpg" class="img-fluid w-100" alt="services-icon">
-          <h5 class="text-center mt-3">SEARCH ENGINE OPTIMIZATION(SEO)</h5>
+          <img src="./vendor/img/categories/digital_marketing.jpg" class="img-fluid w-100" alt="services-icon">
+          <h5 class="text-center mt-3">DIGITAL MARKETING</h5>
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 mb-3">
-          <img src="./vendor/img/categories/digital_marketing.jpg" class="img-fluid" alt="services-icon">
-          <h5 class="text-center mt-3">DIGITAL MARKETING</h5>
+          <img src="./vendor/img/banner/home/seo03.jpg" class="img-fluid" alt="services-icon">
+          <h5 class="text-center mt-3">SEARCH ENGINE OPTIMIZATION(SEO)</h5>
 
         </div>
         <div class="col-lg-6 col-md-6 col-sm-6 mb-3">
@@ -156,9 +224,10 @@
       </div>
     </div>
   </section>
+
   <section>
     <div class="container-fluid text-center">
-      <h2 class="text-center text-dark"></h2>
+      <h2 class="text-center text-dark">Transforming Ideas into Success Stories</h2>
       <div class="row mx-auto my-auto justify-content-center">
         <div id="recipeCarousel" class="carousel slide" data-bs-ride="carousel" data-interval="5000">
           <div class="carousel-inner" role="listbox">
@@ -371,6 +440,14 @@
         </div>
       </div>
     </footer>
+  </section>
+
+  <section>
+    <!-- WhatsApp Chat Button -->
+    <div class="whatsapp-button h-25 p-5 overflow-hidden">
+      <!-- Replace 'YOUR_WHATSAPP_SCRIPT_URL' with the actual URL of your WhatsApp script -->
+      <div class="elfsight-app-cb1b70f1-4531-4bbe-b073-10c1ec2488e8" data-elfsight-app-lazy></div>
+    </div>
   </section>
   <!--Bootstrap Js -->
   <script src="./vendor/bootstrap/js/bootstrap.bundle.js"></script>

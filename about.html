@@ -22,47 +22,126 @@
     <link rel="stylesheet" href="./vendor/bootstrap/css/bootstrap.min.css" />
     <!-- Custom styles -->
     <link rel="stylesheet" href="./vendor/css/style.css" />
+    <!-- What's app Api -->
+    <script src="https://static.elfsight.com/platform/platform.js" defer></script>
+
 </head>
 
-<body>
+<body style="background-color: #fcf8fa;">
+
     <!-- Header Section Nav Bar -->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar bg-white navbar-expand-xl navbar-dark bg-body-tertiary shadow ">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="./vendor/img/logo/logo.png" alt="">
+                <a href="#" class="navbar-brand" href="index.html">
+                    <img src="./vendor/img/logo/logo.png" class="img-fluid" alt="logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" id="navbar-toggler-button" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div class="toggle">
+                        <span class="line-toggle"></span>
+                        <span class="line-toggle"></span>
+                        <span class="line-toggle"></span>
+                    </div>
+                    <!-- <span class="navbar-toggler-icon"></span> -->
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active mt-1" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mt-1" href="protfilio.html">Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mt-1" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contact.html" class="text-light"><button type="button"
-                                    class="btn btn-dark p-1"><small>Get in
-                                        Touch</small></a>
-                        </li>
-                    </ul>
-                    <!-- <div class="contact-info d-md-flex">
-            <p><a href="mailto:design@agep-international.com">design@agep-international.com</a></p>
-            <p> +91-8390375254 </p>
-            <a href="#0"><button type="button" class="btn btn-outline-dark">Get in Touch</a>
-          </div> -->
+                <div class="offcanvas offcanvas-end bg-white text-black" id="navbarOffcanvas" tabindex="-1"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title text-black" id="offcanvasNavbarLabel">Agep Design Soluction</h5>
+                        <button type="button" class="btn-close btn-close-black text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <ul class="navbar-nav ms-auto mb-2">
+                                <li class="nav-item">
+                                    <a class="nav-link mt-1" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link mt-1 nav-link dropdown-toggle" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                                    <div class="dropdown-menu mt-4">
+                                        <ul>
+                                            <li><a class=" dropdown-item" href="services.html"
+                                                    style="color:#F77700">Branding</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="services.html">Brand Strategy</a></li>
+                                            <li><a class="dropdown-item" href="services.html">Corporate Stationery</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="services.html">Logo Design</a></li>
+                                            <li><a class="dropdown-item" href="services.html">Brand Manual</a></li>
+                                            <li><a class="dropdown-item" href="services.html">Collateral Design</a></li>
+                                            <li><a class="dropdown-item" href="services.html">Social Media Graphics</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="services.html">Print & Digital Media</a>
+                                            </li>
+
+                                        </ul>
+                                        <ul>
+                                            <li><a class="dropdown-item" href="services.html"
+                                                    style="color:#F77700">Digital
+                                                    Marketing</a></li>
+                                            <li><a class="dropdown-item" href="services.html">Social Media Marketing</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="services.html">Email Marketing</a></li>
+                                            <li><a class="dropdown-item" href="services.html">Pay Per Click Ads</a></li>
+                                            <li><a class="dropdown-item" href="services.html">Reports & Analysis</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="services.html">Strategies</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a class="dropdown-item" href="services.html" style="color:#F77700">Web
+                                                    Development</a></li>
+                                            <li><a class="dropdown-item" href="services.html">User Experience Design</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="services.html">User Interface Design</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="services.html">Website Analysis</a></li>
+                                            <li><a class="dropdown-item" href="services.html">Website Development</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="services.html">E-commerce Web Design</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="services.html">Website Maintenance &
+                                                    Support</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a class="dropdown-item" href="services.html"
+                                                    style="color:#F77700">SEO</a></li>
+                                            <li><a class="dropdown-item" href="services.html" target="#branding">Keyword
+                                                    Analysis</a></li>
+                                            <li><a class="dropdown-item" href="services.html">Landing Page
+                                                    Optimization</a></li>
+                                            <li><a class="dropdown-item" href="services.html">Backlinks</a></li>
+                                            <li><a class="dropdown-item" href="services.html">Influencer Marketing</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link mt-1" href="about.html">About Us</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link mt-1" href="protfilio.html">Work</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="contact.html" class="text-light p-2"><button type="button"
+                                            class="btn btn-dark p-1"><small>Get in
+                                                Touch</small></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
+    <!----------------------- Header Section End ------------------->
+
     <section>
         <!-- Floating Social Media bar Starts -->
         <div class="float-sm">
@@ -85,26 +164,17 @@
         </div>
         <!-- Floating Social Media bar Ends -->
     </section>
-    <!-- <section>
-        <div class="container-fluid text-header">
-            <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center mt-5">
-                    <h2>The <span><b>DIGITAL </b></span>Era</h2><br>
-                    <h3>-Design & Marketing Hub</h3>
-                    <div class="ratio ratio-21x9">
-                        <video id="myVideo" src="./vendor/video/front_design.mp4" loop="true" autoplay="true"
-                            muted></video>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section> -->
+
     <section>
-        <div class="container-fluid header-text" style="background-color: #fcf8fa;">
+        <div class="container header-text">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-5">
-                    <h2 class="display-4">Designing <span style="color:#FF0066;">SUCCESS</span> Together <br>
-                        With AGEP</span>
+                <div class="col-lg-12 col-md-12 col-sm-12 justify-content-start mt-5">
+
+                    <h2 class="display-6 fw-bolder">We Belive in transformation through<br>
+                        <span style="color:#FF0066;">
+                            <bold>CREATIVE APPROACH</bold>
+                        </span><br>
+                        <h5 class="bx-italic">We have a commited team to transfer beliefs into actions</h5>
                     </h2>
                     <!-- <h5 class="mt-4">Where innovation and strategy unite to shape exceptional design solutions
                     </h5> -->
@@ -116,15 +186,15 @@
     <section>
         <div class="container">
             <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 p-5">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 mt-5">
                     <h1 class="text-center">About Us</h1>
-                    <p class="align-item:justify p-3">
+                    <p class="align-item:justify">
                         AGEP Design Solutions addresses social media needs in a unique way by not only extending
                         image building to your business but also by creating catchy visuals, managing SEO, creating, and
                         managing targeted brand campaigns and mass-reach solutions. AGEP Design Solutions enlist and
                         make work any brand across social media’s powerful engines. We are also providing
                         Communication Design Solutions, such as Branding promotions, and all types of Advertising in
-                        Print,Digital & web media.<br />
+                        Print,Digital & Web media.<br />
                         Design Solutions is conceptualised and incorporated in India by a team of highly qualified
                         Design graduates who hail from institutes of repute such as JJ School of Art, NMIMS,
                         Welingkar’s, GCM,CISFA, MIT-WPU, DPU and SID with vast experience in Advertising, Branding,
@@ -167,7 +237,7 @@
         <div class="container p-4">
             <div class="row">
                 <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12">
-                    <h1 class="text-center">What Are We?</h1>
+                    <h1 class="text-center">Our Essence</h1>
                     <p class="align-item:justify p-2">
                         We are your creative compass in the ever-evolving world of design and digital marketing. Our
                         agency is a dynamic blend of artistry and strategy, guiding businesses to navigate the digital
@@ -183,35 +253,48 @@
     <section>
         <div class="container p-5">
             <div class="row">
-                <h1 class="text-center">How We Work!</h1>
+                <h1 class="text-center">Our Symphony of ideas</h1>
                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3">
                     <p class="text-center">
-                        <img src="./vendor/img/vision&mission/scalable growth-01.png" class="img-fluid w-100" alt="">
-                        <small> From targeted campaigns to data-driven insights, we navigate the digital
-                            landscape with
-                            finesse,
-                            ensuring your brand thrives in the online realm.</small>
+                    <div class="ratio ratio-1x1">
+                        <video id="myVideo" src="./vendor/video/aboutus/strategize03.mp4" loop="true" autoplay="true"
+                            muted></video>
+                    </div>
+                    <small> From targeted campaigns to data-driven insights, we navigate the digital
+                        landscape with
+                        finesse,
+                        ensuring your brand thrives in the online realm.</small>
                     </p>
                 </div>
                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 mt-5">
                     <p class="text-center">
                         <small> Our digital marketing agency seamlessly integrates creativity and functionality,
                             delivering results that surpass expectations..</small>
-                        <img src="./vendor/img/vision&mission/design.png" class="img-fluid w-100" alt="">
+                        <!-- <img src="./vendor/img/vision&mission/design.png" class="img-fluid w-100" alt=""> -->
+                    <div class="ratio ratio-1x1">
+                        <video id="myVideo" src="./vendor/video/aboutus/design.mp4" loop="true" autoplay="true"
+                            muted></video>
+                    </div>
                     </p>
                 </div>
                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3">
                     <p class="text-center">
-                        <img src="./vendor/img/vision&mission/scalable growth-03.png" class="img-fluid w-100" alt="">
-                        <small>We bring your brand to life through a results-focused methodology, ensuring your unique
-                            identity and market objectives.</small>
+                    <div class="ratio ratio-1x1">
+                        <video id="myVideo" src="./vendor/video/aboutus/execution.mp4" loop="true" autoplay="true"
+                            muted></video>
+                    </div>
+                    <small>We bring your brand to life through a results-focused methodology, ensuring your unique
+                        identity and market objectives.</small>
                     </p>
                 </div>
                 <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3 mt-5">
                     <p class="text-center">
                         <small> Our dedicated support team stands by your side, offering post-project assistance, and
                             performance analysis.</small>
-                        <img src="./vendor/img/vision&mission/scalable growth-04.png" class="img-fluid w-100" alt="">
+                    <div class="ratio ratio-1x1">
+                        <video id="myVideo" src="./vendor/video/aboutus/support02.mp4" loop="true" autoplay="true"
+                            muted></video>
+                    </div>
                     </p>
                 </div>
             </div>
@@ -243,75 +326,6 @@
     </div>
     <section>
         <footer class="footer-section">
-            <!-- <div class="container">
-            <div class="footer-cta pt-5">
-              <div class="row">
-    
-                <div class="col-xl-6 col-md-6 mb-30">
-                  <div class="single-cta">
-                    <i class="fas fa-phone"></i>
-                    <div class="cta-text">
-                      <h4>Call us</h4>
-                      <span>+91-8390375254</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-md-6 mb-30">
-                  <div class="single-cta">
-                    <i class="fas fa-envelope-open"></i>
-                    <div class="cta-text">
-                      <h4>Mail us</h4>
-                      <span>design@agep-international.com</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="footer-content pt-5 pb-5">
-              <div class="row">
-                <div class="col-xl-4 col-lg-4 mb-50">
-                  <div class="footer-widget">
-                    <div class="footer-logo">
-                      <a href="index.html"><img src="./vendor/img/logo/logo.png" class="img-fluid" alt="logo"></a>
-                    </div>
-                    <div class="footer-text">
-                      <p>AGEP Design Solutions is a Digital marketing firm that offers a broad range of services. Get the
-                        greatest outcomes for your business by attracting, impressing, and converting more leads online.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 mb-50">
-                  <div class="single-cta">
-                    <div class="footer-widget-heading">
-                      <h3>Find us</h3>
-                      <span>
-                        D-106, first Floor, Madhuban Commercial Complex, near MONT VERT CORSICA, Balewadi, Pune,
-                        Maharashtra
-                        411045
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                  <div class="footer-widget">
-                    <div class="footer-widget-heading">
-                      <h3>Subscribe</h3>
-                    </div>
-                    <div class="footer-text mb-25">
-                      <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                    </div>
-                    <div class="subscribe-form">
-                      <form action="#">
-                        <input type="text" placeholder="Email Address">
-                        <button><i class="fab fa-telegram-plane"></i></button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
             <div class="copyright-area">
                 <div class="container">
                     <div class="row">
@@ -335,6 +349,13 @@
                 </div>
             </div>
         </footer>
+    </section>
+    <section>
+        <!-- WhatsApp Chat Button -->
+        <div class="whatsapp-button h-25 p-5 overflow-hidden">
+            <!-- Replace 'YOUR_WHATSAPP_SCRIPT_URL' with the actual URL of your WhatsApp script -->
+            <div class="elfsight-app-cb1b70f1-4531-4bbe-b073-10c1ec2488e8" data-elfsight-app-lazy></div>
+        </div>
     </section>
     <!--Bootstrap Js -->
     <script src="./vendor/bootstrap/js/bootstrap.bundle.js"></script>

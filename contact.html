@@ -25,36 +25,102 @@
 </head>
 
 <body>
-  <!-- Header Section Nav Bar -->
+  <!-------------------- Header Section Nav Bar ----------------------->
   <header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar bg-white navbar-expand-xl navbar-dark bg-body-tertiary shadow ">
       <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="./vendor/img/logo/logo.png" alt="">
+        <a href="#" class="navbar-brand" href="index.html">
+          <img src="./vendor/img/logo/logo.png" class="img-fluid" alt="logo">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" id="navbar-toggler-button" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <div class="toggle">
+            <span class="line-toggle"></span>
+            <span class="line-toggle"></span>
+            <span class="line-toggle"></span>
+          </div>
+          <!-- <span class="navbar-toggler-icon"></span> -->
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active mt-1" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mt-1" href="about.html">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mt-1" href="protfilio.html">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link mt-1" href="services.html">Services</a>
-            </li>
-          </ul>
+        <div class="offcanvas offcanvas-end bg-white text-black" id="navbarOffcanvas" tabindex="-1"
+          aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title text-black" id="offcanvasNavbarLabel">Agep Design Soluction</h5>
+            <button type="button" class="btn-close btn-close-black text-reset" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <ul class="navbar-nav ms-auto mb-2">
+                <li class="nav-item">
+                  <a class="nav-link mt-1" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                  <a class="nav-link mt-1 nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">Services</a>
+                  <div class="dropdown-menu mt-4">
+                    <ul>
+                      <li><a class=" dropdown-item" style="color:#F77700" href="services.html">Branding</a>
+                      </li>
+                      <li><a class="dropdown-item" href="services.html">Brand Strategy</a></li>
+                      <li><a class="dropdown-item" href="services.html">Corporate Stationery</a></li>
+                      <li><a class="dropdown-item" href="services.html">Logo Design</a></li>
+                      <li><a class="dropdown-item" href="services.html">Brand Manual</a></li>
+                      <li><a class="dropdown-item" href="services.html">Collateral Design</a></li>
+                      <li><a class="dropdown-item" href="services.html">Social Media Graphics</a></li>
+                      <li><a class="dropdown-item" href="services.html">Print & Digital Media</a></li>
+
+                    </ul>
+                    <ul>
+                      <li><a class="dropdown-item" style="color:#F77700" href="services.html">Digital Marketing</a></li>
+                      <li><a class="dropdown-item" href="services.html">Social Media Marketing</a></li>
+                      <li><a class="dropdown-item" href="services.html">Email Marketing</a></li>
+                      <li><a class="dropdown-item" href="services.html">Pay Per Click Ads</a></li>
+                      <li><a class="dropdown-item" href="services.html">Reports & Analysis</a></li>
+                      <li><a class="dropdown-item" href="services.html">Strategies</a></li>
+                      <li><a class="dropdown-item" href="services.html">services.html</a></li>
+                    </ul>
+                    <ul>
+                      <li><a class="dropdown-item" style="color:#F77700" href="services.html">Web Development</a></li>
+                      <li><a class="dropdown-item" href="services.html">User Experience Design</a></li>
+                      <li><a class="dropdown-item" href="services.html">User Interface Design</a></li>
+                      <li><a class="dropdown-item" href="services.html">Website Analysis</a></li>
+                      <li><a class="dropdown-item" href="services.html">Website Development</a></li>
+                      <li><a class="dropdown-item" href="services.html">E-commerce Web Design</a></li>
+                      <li><a class="dropdown-item" href="services.html">Website Maintenance & Support</a></li>
+                    </ul>
+                    <ul>
+                      <li><a class="dropdown-item" style="color:#F77700" href="services.html">SEO</a></li>
+                      <li><a class="dropdown-item" href="services.html" target="#branding">Keyword Analysis</a></li>
+                      <li><a class="dropdown-item" href="services.html">Landing Page Optimization</a></li>
+                      <li><a class="dropdown-item" href="services.html">Backlinks</a></li>
+                      <li><a class="dropdown-item" href="services.html">Influencer Marketing</a></li>
+                    </ul>
+                  </div>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link mt-1" href="about.html">About Us</a>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link mt-1" href="protfilio.html">Work</a>
+                </li>
+
+                <li class="nav-item">
+                  <a href="contact.html" class="text-light p-2"><button type="button"
+                      class="btn btn-dark p-1"><small>Get in
+                        Touch</small></a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </nav>
   </header>
+  <!----------------------- Header Section End ------------------->
   <section>
     <!-- Floating Social Media bar Starts -->
     <div class="float-sm">
@@ -79,11 +145,17 @@
   </section>
 
   <section>
-    <div class="container-fluid header-text" style="background-color: #ffffff;">
+    <div class="container header-text">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-5">
-          <h2 class="display-4">Design Your <span style="color:#FF0066;">STORY</span></h2>
-          <div class="loader"></div>
+          <span class="display-6 fw-bold">Let's create relationship of empathy with <br>technology to <span
+              style="color:#FF0066;">
+              <bold>make design better</bold>
+            </span>
+            <h2 class="display-5 mt-5">Design Your <span style="color:#FF0066;">
+                <bold>STORY</bold>
+              </span></h2>
+            <div class="loader"></div>
         </div>
       </div>
     </div>

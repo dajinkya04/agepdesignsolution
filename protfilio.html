@@ -27,44 +27,119 @@
 </head>
 
 <body>
-    <!-- Header Section Nav Bar -->
+    <!-------------------- Header Section Nav Bar ----------------------->
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar bg-white navbar-expand-xl navbar-dark bg-body-tertiary shadow ">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="./vendor/img/logo/logo.png" alt="">
+                <a href="#" class="navbar-brand" href="index.html">
+                    <img src="./vendor/img/logo/logo.png" class="img-fluid" alt="logo">
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler" id="navbar-toggler-button" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <div class="toggle">
+                        <span class="line-toggle"></span>
+                        <span class="line-toggle"></span>
+                        <span class="line-toggle"></span>
+                    </div>
+                    <!-- <span class="navbar-toggler-icon"></span> -->
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active mt-1" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mt-1" href="about.html">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link mt-1" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="contact.html" class="text-light"><button type="button"
-                                    class="btn btn-dark p-1"><small>Get in
-                                        Touch</small></a>
-                        </li>
-                    </ul>
-                    <!-- <div class="contact-info d-md-flex">
-            <p><a href="mailto:design@agep-international.com">design@agep-international.com</a></p>
-            <p> +91-8390375254 </p>
-            <a href="#0"><button type="button" class="btn btn-outline-dark">Get in Touch</a>
-          </div> -->
+                <div class="offcanvas offcanvas-end bg-white text-black" id="navbarOffcanvas" tabindex="-1"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title text-black" id="offcanvasNavbarLabel">Agep Design Soluction</h5>
+                        <button type="button" class="btn-close btn-close-black text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <ul class="navbar-nav ms-auto mb-2">
+                                <li class="nav-item">
+                                    <a class="nav-link mt-1" href="index.html">Home</a>
+                                </li>
+
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link mt-1 nav-link dropdown-toggle" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">Services</a>
+                                    <div class="dropdown-menu mt-4">
+                                        <ul>
+                                            <li><a class=" dropdown-item" href="services.html"
+                                                    style="color:#F77700">Branding</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="services.html">Brand Strategy</a></li>
+                                            <li><a class="dropdown-item" href="services.html">Corporate Stationery</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="services.html">Logo Design</a></li>
+                                            <li><a class="dropdown-item" href="services.html">Brand Manual</a></li>
+                                            <li><a class="dropdown-item" href="services.html">Collateral Design</a></li>
+                                            <li><a class="dropdown-item" href="services.html">Social Media Graphics</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="services.html">Print & Digital Media</a>
+                                            </li>
+
+                                        </ul>
+                                        <ul>
+                                            <li><a class="dropdown-item" href="services.html"
+                                                    style="color:#F77700">Digital
+                                                    Marketing</a></li>
+                                            <li><a class="dropdown-item" href="services.html">Social Media Marketing</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="services.html">Email Marketing</a></li>
+                                            <li><a class="dropdown-item" href="services.html">Pay Per Click Ads</a></li>
+                                            <li><a class="dropdown-item" href="services.html">Reports & Analysis</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="services.html">Strategies</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a class="dropdown-item" href="services.html" style="color:#F77700">Web
+                                                    Development</a></li>
+                                            <li><a class="dropdown-item" href="services.html">User Experience Design</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="services.html">User Interface Design</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="services.html">Website Analysis</a></li>
+                                            <li><a class="dropdown-item" href="services.html">Website Development</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="services.html">E-commerce Web Design</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="services.html">Website Maintenance &
+                                                    Support</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a class="dropdown-item" href="services.html"
+                                                    style="color:#F77700">SEO</a></li>
+                                            <li><a class="dropdown-item" href="services.html" target="#branding">Keyword
+                                                    Analysis</a></li>
+                                            <li><a class="dropdown-item" href="services.html">Landing Page
+                                                    Optimization</a></li>
+                                            <li><a class="dropdown-item" href="services.html">Backlinks</a></li>
+                                            <li><a class="dropdown-item" href="services.html">Influencer Marketing</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link mt-1" href="about.html">About Us</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link mt-1" href="protfilio.html">Work</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a href="contact.html" class="text-light p-2"><button type="button"
+                                            class="btn btn-dark p-1"><small>Get in
+                                                Touch</small></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
+    <!----------------------- Header Section End ------------------->
     <section>
         <!-- Floating Social Media bar Starts -->
         <div class="float-sm">
@@ -89,19 +164,53 @@
     </section>
 
     <section>
-        <div class="container-fluid header-text" style="background-color: #fcf8fa;">
+        <div class="container header-text">
             <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 text-center mt-5">
-                    <h2 class="display-4">Ideate Design & Evolve <br>Until
-                        <span style="color:#FF0066;">SATISFIED</span>
+                <div class="col-lg-12 col-md-12 col-sm-12 justify-content-start mt-5">
+                    <h2 class="display-6 fw-bolder">Ideate,Design & Evolve Until <br>
+                        <span style="color:#FF0066;">
+                            <bold>SATISFIED</bold>
+                        </span>
                     </h2>
+                    <h5 class="bx-italic">Creatively Taliored Solutions For Youor Brand's <br>
+                        Unique Growth Path On Different Platform </h5>
                 </div>
             </div>
         </div>
     </section>
 
     <section>
-        <div class="container mt-5 p-5">
+        <div class="container mt-5">
+            <div class="row">
+                <h4 class="align-item:justify"><b>Corporate Identity</b></h4>
+                <div class="col-xl-6 col-md-6 col-sm-6 w-80">
+                    <img src="./vendor/img/protfilio/New folder/Corporate stationery.jpg" class="img-fluid" alt="">
+                    <p class="text-muted align-item:justify mt-1"> <b>Brand Kit | Corporate Gifting </b></p>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-6 w-80">
+                    <img src="./vendor/img/protfilio/New folder/logo 02.jpg" class="img-fluid" alt="">
+                    <p class="text-muted align-item:justify mt-1"> <b> Branding | Logo Design</b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <h4 class="align-item:justify"><b></b></h4>
+                <div class="col-xl-6 col-md-6 col-sm-6 w-80">
+                    <img src="./vendor/img/protfilio/laptop_pad02.jpg" class="img-fluid" alt="">
+                    <p class="text-muted align-item:justify mt-1"> <b>Brand Kit | Corporate Gifting </b></p>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-6 w-80">
+                    <img src="./vendor/img/protfilio/yci.jpg" class="img-fluid" alt="">
+                    <p class="text-muted align-item:justify mt-1"> <b> Brand Kit | Corporate Gifting </b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mt-5">
             <div class="row">
                 <h4 class="align-item:justify"><b>Brochure Design</b></h4>
                 <div class="col-xl-6 col-md-6 col-sm-6 w-80">
@@ -117,11 +226,11 @@
     </section>
 
     <section>
-        <div class="container mt-2 p-5">
+        <div class="container mt-5">
             <div class="row">
-                <h4 class="align-item:justify"><b>Standee Design</b></h4>
+                <h4 class="align-item:justify"><b>Roll-Up Banner Standee Design</b></h4>
                 <div class="col-xl-6 col-md-6 col-sm-6 w-80">
-                    <img src="./vendor/img/protfilio/standee.jpg" class="img-fluid" alt="">
+                    <img src="./vendor/img/protfilio/Standee.jpg" class="img-fluid" alt="">
                     <p class="text-muted align-item:justify"><b>Industrial Exhibition | Typography Design</b></p>
                 </div>
                 <div class="col-xl-6 col-md-6 col-sm-6 w-80">
@@ -131,21 +240,70 @@
             </div>
         </div>
     </section>
-
     <section>
-        <div class="container mt-2 p-5">
+        <div class="container mt-5">
             <div class="row">
                 <div class="col-xl-12 col-md-12 col-sm-12">
-                    <h3 class="align-item:justify"><b>Promotional Campaign</b></h3>
-                    <video src="./vendor/video/smm01.mp4" class="card-img-top" muted autoplay loop></video>
-                    <p class="text-muted align-item:justify"><b>Marketing | Social Media Post</b></p>
+                    <h4 class="align-item:justify"><b>Packaging</b></h4>
+                    <video src="./vendor/video/coffee_cups.mp4" class="card-img-top" muted autoplay loop></video>
+                    <p class="text-muted align-item:justify"><b>Banding | Product Design</b></p>
 
                 </div>
             </div>
         </div>
     </section>
+
     <section>
-        <div class="container mt-2 p-5">
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-xl-6 col-md-6 col-sm-6 w-80">
+                    <img src="./vendor/img/protfilio/New folder/packaging.jpg" class="img-fluid" alt="">
+                    <p class="text-muted align-item:justify mt-1"> <b>Pattern Design | Food Packaging</b></p>
+                </div>
+                <div class="col-xl-6 col-md-6 col-sm-6 w-80">
+                    <img src="./vendor/img/protfilio/New folder/Free_Grid_Box_5.jpg" class="img-fluid" alt="">
+                    <p class="text-muted align-item:justify mt-1"> <b>Illustration | Commerical Labels</b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-xl-12 col-md-12 col-sm-12">
+                    <img src="./vendor/img/protfilio/New folder/Layer 7.jpg" class="img-fluid" alt="">
+                    <p class="text-muted align-item:justify mt-1"> <b>Product Labels | Logo Design</b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <h4 class="align-item:justify"><b>Poster Design</b></h4>
+                <div class="col-xl-12 col-md-12 col-sm-12">
+                    <img src="./vendor/img/protfilio/New folder/Artboard 2.jpg" class="img-fluid" alt="">
+                    <p class="text-muted align-item:justify mt-1"> <b>Branding | Product Design</b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <h4 class="align-item:justify"><b>Promotional Campaign</b></h4>
+                <div class="col-xl-12 col-md-12 col-sm-12">
+                    <video src="./vendor/video/rca01.mp4" class="card-img-top" muted autoplay loop></video>
+                    <p class="text-muted align-item:justify mt-1"> <b>Awareness Campaign | Social Media
+                            Marketing</b> </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container mt-5">
             <div class="row">
                 <div class="col-xl-6 col-md-6 col-sm-6 w-80">
                     <img src="./vendor/img/protfilio/Promotional Campaign01.jpg" class="img-fluid" alt="">
@@ -161,84 +319,49 @@
             </div>
         </div>
     </section>
-
     <section>
-        <div class="container mt-2 p-5">
+        <div class="container mt-5">
             <div class="row">
                 <div class="col-xl-12 col-md-12 col-sm-12">
-                    <video src="./vendor/video/rca01.mp4" class="card-img-top" muted autoplay loop></video>
-                    <p class="text-muted align-item:justify mt-1"> <b>Awareness Campaign | Social Media
+                    <video src="./vendor/video//smm01.mp4" class="card-img-top" muted autoplay loop></video>
+                    <p class="text-muted align-item:justify mt-1"> <b>Road Safety Awareness Campaign | Social Media
                             Marketing</b> </p>
                 </div>
             </div>
         </div>
     </section>
 
+
     <section>
-        <div class="container mt-5 p-5">
+        <div class="container mt-5">
             <div class="row">
-                <h4 class="align-item:justify"><b>Corporate Identity</b></h4>
+                <h4 class="align-item:justify"><b>Hoarding</b></h4>
                 <div class="col-xl-6 col-md-6 col-sm-6 w-80">
-                    <img src="./vendor/img/protfilio/New folder/Corporate stationery.jpg" class="img-fluid" alt="">
+                    <img src="./vendor/img/protfilio/New folder/02.jpg" class="img-fluid" alt="">
                     <p class="text-muted align-item:justify mt-1"> <b>Brand Kit | Corporate Gifting</b></p>
                 </div>
                 <div class="col-xl-6 col-md-6 col-sm-6 w-80">
-                    <img src="./vendor/img/protfilio/New folder/logo 02.jpg" class="img-fluid" alt="">
-                    <p class="text-muted align-item:justify mt-1"> <b>Branding | Logo Design</b></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container mt-2 p-5">
-            <div class="row">
-                <h4 class="align-item:justify"><b>Packaging</b></h4>
-                <div class="col-xl-12 col-md-12 col-sm-12">
-                    <img src="./vendor/img/protfilio/New folder/coffe02.jpg" class="img-fluid" alt="">
-                    <p class="text-muted align-item:justify mt-1"> <b> Branding | Product Design</b></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section>
-        <div class="container mt-2 p-5">
-            <div class="row">
-                <div class="col-xl-6 col-md-6 col-sm-6 w-80">
-                    <img src="./vendor/img/protfilio/New folder/packaging.jpg" class="img-fluid" alt="">
-                    <p class="text-muted align-item:justify mt-1"> <b>Pattern Design | Food Packaging</b></p>
-                </div>
-                <div class="col-xl-6 col-md-6 col-sm-6 w-80">
-                    <img src="./vendor/img/protfilio/New folder/Free_Grid_Box_5.jpg" class="img-fluid" alt="">
-                    <p class="text-muted align-item:justify mt-1"> <b>Illustration | Commerical Labels</b></p>
+                    <img src="./vendor/img/protfilio/New folder/03.jpg" class="img-fluid" alt="">
+                    <p class="text-muted align-item:justify mt-1"> <b>Brand Kit | Corporate Gifting</b></p>
                 </div>
             </div>
         </div>
     </section>
     <section>
-        <div class="container mt-2 p-5">
-            <div class="row">
-                <div class="col-xl-12 col-md-12 col-sm-12">
-                    <img src="./vendor/img/protfilio/New folder/Layer 7.jpg" class="img-fluid" alt="">
-                    <p class="text-muted align-item:justify mt-1"> <b>Product Labels | Logo Design</b></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section>
-        <div class="container mt-2 p-5">
+        <div class="container mt-5">
             <div class="row">
                 <h4 class="align-item:justify"><b>Web Design</b></h4>
                 <div class="col-xl-12 col-md-12 col-sm-12">
-                    <img src="./vendor/img/protfilio/New folder/web_pages.png" class="img-fluid" alt="">
-                    <p class="text-muted align-item:justify mt-1"> <b>UI Design | Home Banner</b></p>
+                    <video src="./vendor/img/protfilio/New folder/int.web.video.mp4" class="card-img-top" muted autoplay
+                        loop></video>
+                    <p class="text-muted align-item:justify mt-1"> <b>UI Design | Home Banner
+                            Marketing</b> </p>
                 </div>
             </div>
         </div>
     </section>
     <section>
-        <div class="container mt-2 p-5">
+        <div class="container mt-5">
             <div class="row">
                 <div class="col-xl-6 col-md-6 col-sm-6 w-80">
                     <img src="./vendor/img/protfilio/New folder/Layer 8.jpg" class="img-fluid" alt="">
@@ -247,6 +370,18 @@
                 <div class="col-xl-6 col-md-6 col-sm-6 w-80">
                     <img src="./vendor/img/protfilio/New folder/int.jpg" class="img-fluid" alt="">
                     <p class="text-muted align-item:justify mt-1"> <b>Responsive Design </b></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container mt-5">
+            <div class="row">
+                <h4 class="align-item:justify"><b>Web Design</b></h4>
+                <div class="col-xl-12 col-md-12 col-sm-12">
+                    <img src="./vendor/img/protfilio/New folder/web_pages.png" class="img-fluid" alt="">
+                    <p class="text-muted align-item:justify mt-1"> <b>UI Design | Home Banner</b></p>
                 </div>
             </div>
         </div>
@@ -278,75 +413,6 @@
     </div>
     <section>
         <footer class="footer-section">
-            <!-- <div class="container">
-            <div class="footer-cta pt-5">
-              <div class="row">
-    
-                <div class="col-xl-6 col-md-6 mb-30">
-                  <div class="single-cta">
-                    <i class="fas fa-phone"></i>
-                    <div class="cta-text">
-                      <h4>Call us</h4>
-                      <span>+91-8390375254</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-6 col-md-6 mb-30">
-                  <div class="single-cta">
-                    <i class="fas fa-envelope-open"></i>
-                    <div class="cta-text">
-                      <h4>Mail us</h4>
-                      <span>design@agep-international.com</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="footer-content pt-5 pb-5">
-              <div class="row">
-                <div class="col-xl-4 col-lg-4 mb-50">
-                  <div class="footer-widget">
-                    <div class="footer-logo">
-                      <a href="index.html"><img src="./vendor/img/logo/logo.png" class="img-fluid" alt="logo"></a>
-                    </div>
-                    <div class="footer-text">
-                      <p>AGEP Design Solutions is a Digital marketing firm that offers a broad range of services. Get the
-                        greatest outcomes for your business by attracting, impressing, and converting more leads online.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-4 mb-50">
-                  <div class="single-cta">
-                    <div class="footer-widget-heading">
-                      <h3>Find us</h3>
-                      <span>
-                        D-106, first Floor, Madhuban Commercial Complex, near MONT VERT CORSICA, Balewadi, Pune,
-                        Maharashtra
-                        411045
-                      </span>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                  <div class="footer-widget">
-                    <div class="footer-widget-heading">
-                      <h3>Subscribe</h3>
-                    </div>
-                    <div class="footer-text mb-25">
-                      <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                    </div>
-                    <div class="subscribe-form">
-                      <form action="#">
-                        <input type="text" placeholder="Email Address">
-                        <button><i class="fab fa-telegram-plane"></i></button>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
             <div class="copyright-area">
                 <div class="container">
                     <div class="row">
@@ -370,6 +436,13 @@
                 </div>
             </div>
         </footer>
+    </section>
+    <section>
+        <!-- WhatsApp Chat Button -->
+        <div class="whatsapp-button h-25 p-5 overflow-hidden">
+            <!-- Replace 'YOUR_WHATSAPP_SCRIPT_URL' with the actual URL of your WhatsApp script -->
+            <div class="elfsight-app-cb1b70f1-4531-4bbe-b073-10c1ec2488e8" data-elfsight-app-lazy></div>
+        </div>
     </section>
     <!--Bootstrap Js -->
     <script src="./vendor/bootstrap/js/bootstrap.bundle.js"></script>
