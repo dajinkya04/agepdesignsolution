@@ -208,13 +208,14 @@ color: gray;
 
 /*----------------------------- Services_menu Section dropdown-----------------------------*/
 .navbar {
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
     font-family: 'Poppins', sans-serif;
 }
 .navbar .navbar-brand img {
-    max-width:9rem;
+    max-width:8rem;
 
 }
+
 .navbar .navbar-nav .nav-link {
     font-family: 'Poppins', sans-serif;
     font-size:13px;
@@ -361,6 +362,9 @@ Text Section
   font-weight:800;
   line-height:0.5;
 }
+.text-header .top-header-text{
+  font-size:38px;
+}
 .text-header span{
   font-size:70px;
     color:#222;
@@ -398,12 +402,21 @@ Text Section
     }
 #dynamicContent {
         white-space: nowrap;
-       background: -webkit-linear-gradient(#fb7700, #FF0066);
+          background-image: linear-gradient(to right,#FF0066,#fb7700);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-        font-size:2rem;
+       font-weight:800;
+        font-size:38px;
     }
     
+
+  .ani-text span{
+     white-space: nowrap;
+  background-image: linear-gradient(to right,#fb7700 ,#FF0066);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight:800;
+  }
 @media only screen and (max-width: 768px)  {
   .text-header {
   height: 50vh;
@@ -460,7 +473,7 @@ Text Section
 			width: 27ch;
 			overflow: hidden;
 			white-space: nowrap;
-      font-size:50px;
+      font-size:40px;
       animation: type 4.5s  infinite;			
 		}
 
@@ -1059,7 +1072,7 @@ width:45%;
 
 .services-iconsection .link:hover {
   cursor: pointer;
-  background: #FF0066;
+  background-image: linear-gradient(to right,#fb7700 ,#FF0066);
   color: #fff;
   transition: background-color 0.9s ease;
 }

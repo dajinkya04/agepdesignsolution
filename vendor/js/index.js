@@ -174,7 +174,7 @@ function displayText() {
   // display third text
   setTimeout(() => {
     document.querySelector('#dynamicContent').innerText = thirdText;
-  }, intervalTime * 7);
+  }, intervalTime * 6);
 }
 
 setInterval(() => {
