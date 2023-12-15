@@ -427,29 +427,35 @@ Text Section
     }
     .header-text span{
       font-size:33px;
-             font-family: 'Ubuntu', sans-serif;
+      font-family: 'Ubuntu', sans-serif;
 
     }
-    .header-text bold{
-             font-family: 'Ubuntu', sans-serif;
-       white-space: nowrap;
-          background-image: linear-gradient(90deg,#FF0066,30%,#fb7700);
-    color: transparent;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-        font-size:33px;  
-  
+    .header-text h2{
+      font-family: 'Ubuntu', sans-serif;
+     font-size:41px;
     }
- #dynamicContent {
-        white-space: nowrap;
-         background-image: linear-gradient(90deg,#FF0066,30%,#fb7700);
-    color: transparent;
+    .header-text bold{
+      white-space: nowrap;
+        background-image: linear-gradient(90deg,#FF0066,30%,#fb7700);
+       color: transparent;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
        font-family: 'Ubuntu', sans-serif;
-    font-weight: 800;
-    line-height:1;
-    font-size:41px;
+      font-weight: 800;
+      line-height:1;
+      font-size:41px;
+  
+    }
+ #dynamicContent {
+       white-space: nowrap;
+        background-image: linear-gradient(90deg,#FF0066,30%,#fb7700);
+       color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+       font-family: 'Ubuntu', sans-serif;
+      font-weight: 800;
+      line-height:1;
+      font-size:41px;
       }
   
   .ani-text span{

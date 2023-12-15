@@ -170,13 +170,13 @@ function displayText() {
   // display second text
   setTimeout(() => {
     document.querySelector('#dynamicContent').innerText = secondText;
-  }, intervalTime * 5);
+  }, intervalTime * 12);
   // display third text
   setTimeout(() => {
     document.querySelector('#dynamicContent').innerText = thirdText;
-  }, intervalTime * 6);
+  }, intervalTime * 9);
 }
 
 setInterval(() => {
   displayText();
-}, intervalTime * 7);
+}, intervalTime * 12);
