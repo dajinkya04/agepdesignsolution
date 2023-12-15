@@ -57,9 +57,7 @@ color: gray;
   width: 60px;
   height: 70px;
   background: #fff;
-  border-radius: 10px;
-  // box-shadow: 0 3px 8px 0 #000;
-  
+  border-radius: 10px;  
   position: relative;
   display: flex;
   align-items: center;
@@ -70,16 +68,16 @@ color: gray;
   position: absolute;
   display: block;
   width: 50px;
-  height: 5px;
+  height: 8px;
   background: #000;
-  border-radius: 5px;
+  border-radius: 2px;
   transition: all .6s;
 
 }
 
 .line-toggle:first-child {
   transform: translateY(-30px) translateX(-12px);
-  width: 50px;
+  width: 40px;
   transition-delay: 0s;
 }
 
@@ -89,7 +87,7 @@ color: gray;
 
 .line-toggle:last-child {
   transform: translateY(30px) translateX(-22px);
-  width: 30px;
+  width: 25px;
   transition-delay: 0s;
 }
 
@@ -113,6 +111,12 @@ color: gray;
   height: 5px;
   transition-delay: .1s;
 }
+
+
+// @media only screen and (min-width: 992px) {
+
+
+// }
 /*---------------------- Toggle Section End-----------------------*/ 
 
 /*-------------- Services Section dropdown Menu Section Start-----------------*/
@@ -364,9 +368,33 @@ Text Section
   font-weight:800;
   line-height:0.5;
 }
+.top-textheader{
+    padding:10%;
+    width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  position: relative;
+}
+.top-textheader p{
+   font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+    line-height:1;
+    font-size:60px;
+  letter-spacing:0.2;
+
+}
+
+.sub-headertext h5{
+  font-size:18px;
+  font-weight:600;
+
+}
 .text-header .top-header-text{
   font-size:33px;
-   font-weight:1000;
+   font-weight:900;
   line-height:0.8;
 }
 .text-header span{
@@ -399,15 +427,14 @@ Text Section
     }
     .header-text span{
       font-size:33px;
+             font-family: 'Ubuntu', sans-serif;
+
     }
     .header-text bold{
+             font-family: 'Ubuntu', sans-serif;
        white-space: nowrap;
-          background-image: linear-gradient(
-        45deg,
-       #FF0066 33.333%, 
-       #fb7700 40.666% 
-          );
-
+          background-image: linear-gradient(90deg,#FF0066,30%,#fb7700);
+    color: transparent;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
         font-size:33px;  
@@ -415,29 +442,31 @@ Text Section
     }
  #dynamicContent {
         white-space: nowrap;
-          background-image: linear-gradient(
-        45deg,
-       #FF0066 33.333%, 
-       #fb7700 40.666% 
-          );
-
+         background-image: linear-gradient(90deg,#FF0066,30%,#fb7700);
+    color: transparent;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-        font-size:33px;  
+       font-family: 'Ubuntu', sans-serif;
+    font-weight: 800;
+    line-height:1;
+    font-size:41px;
       }
   
   .ani-text span{
      white-space: nowrap;
-  background-image: linear-gradient(to right,#fb7700 ,#FF0066);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(90deg,#FF0066,30%,#fb7700);
+    color: transparent;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
   font-weight:800;
   }
 @media only screen and (max-width: 768px)  {
-  .text-header {
+  .top-textheader {
   height: 50vh;
   aspect-ratio:2/1;
-
+  }
+  .top-textheader p{
+    font-size:42px;
   }
   .text-header video{
     width: 70vw;
@@ -1109,7 +1138,9 @@ width:45%;
   font-size: 16px;
   border-radius:50px;
 }
-
+.services-con button a{
+color:#FF0066;
+}
 @media screen and (max-width: 768px){
   .service-topsection p{
     font-size:20px;
@@ -1163,4 +1194,169 @@ width:45%;
 .contact-us .map-box2{
 z-index:9999; right:60px; width:360px;	
 } 
+
+
+@media screen and (max-width:1341px){
+ .top-textheader {
+  height: 50vh;
+  aspect-ratio:2/1;
+  }
+  .top-textheader p{
+    font-size:42px;
+  }
+  .toggle {
+    overflow: hidden;
+    width: 50px
+    height: 60px;
+  }
+  .line-toggle:first-child {
+  transform: translateY(-15px) translateX(-15px);
+  width: 100px;
+  transition-delay: 0s;
+}
+.line-toggle:last-child {
+  transform: translateY(15px) translateX(-15px);
+  width: 100px;
+  transition-delay: 0s;
+}
+
+  }
+@media screen and (max-width:933px){
+  .navbar .navbar-brand img {
+    max-width:15rem;
+    overflow:hidden;
+}
+ .top-textheader {
+  height: 50vh;
+  aspect-ratio:2/1;
+  }
+  .top-textheader p{
+    font-size:42px;
+  }
+  .top-textheader #dynamicContent{
+    font-size:25px;
+    width:100%;
+    display:flex;
+  }
+  .toggle {
+    overflow: hidden;
+    width: 50px
+    height: 60px;
+  }
+  .line-toggle:first-child {
+  transform: translateY(-15px) translateX(-15px);
+  width: 100px;
+  transition-delay: 0s;
+}
+.line-toggle:last-child {
+  transform: translateY(15px) translateX(-15px);
+  width: 100px;
+  transition-delay: 0s;
+}
+.ani-text h2{
+  font-size:35px;
+  overflow:hidden;
+  text-align:center;
+}
+  }
+
+
+@media screen and (max-width:641px){
+  .navbar .navbar-brand img {
+    max-width:15rem;
+    overflow:hidden;
+}
+ .top-textheader {
+  height: 42vh;
+  aspect-ratio:2/1;
+  }
+  .top-textheader p{
+    font-size:42px;
+  }
+  .top-textheader #dynamicContent{
+    font-size:22px;
+    width:100ch;
+    display:flex;
+  }
+  .toggle {
+    overflow: hidden;
+    width: 50px
+    height: 60px;
+  }
+  .line-toggle:first-child {
+  transform: translateY(-15px) translateX(-15px);
+  width: 100px;
+  transition-delay: 0s;
+}
+.line-toggle:last-child {
+  transform: translateY(15px) translateX(-15px);
+  width: 100px;
+  transition-delay: 0s;
+}
+// .ani-text h1 span{
+//    padding-right:20%;
+// }
+.ani-text h1{
+   padding-right:30%;
+   font-size:22px;
+}
+.ani-text h2{
+  padding-right:20%;
+  font-size:22px;
+  overflow:hidden;
+  text-align:center;
+}
+  }
+
+
+@media screen and (max-width:489px){
+  .navbar .navbar-brand img {
+    max-width:15rem;
+    overflow:hidden;
+}
+ .top-textheader {
+  height: 30vh;
+  aspect-ratio:2/1;
+  }
+  .top-textheader p{
+    font-size:30px;
+  }
+  .top-textheader #dynamicContent{
+    font-size:15px;
+    width:100ch;
+    display:flex;
+  }
+  .toggle {
+    overflow: hidden;
+    width: 50px
+    height: 60px;
+  }
+  .line-toggle:first-child {
+  transform: translateY(-15px) translateX(-15px);
+  width: 100px;
+  transition-delay: 0s;
+}
+.line-toggle:last-child {
+  transform: translateY(15px) translateX(-15px);
+  width: 100px;
+  transition-delay: 0s;
+}
+// .ani-text h1 span{
+//    padding-right:20%;
+// }
+.ani-text h1{
+   padding-right:30%;
+   font-size:22px;
+}
+.ani-text h2{
+  padding-right:20%;
+  font-size:22px;
+  overflow:hidden;
+  text-align:center;
+}
+.card .card-img{
+  height:100%;
+  overflow:hidden;
+}
+  }
 
