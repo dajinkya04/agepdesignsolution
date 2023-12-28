@@ -158,25 +158,3 @@ async function renderFAQ() {
 
 
 
-
-firstText = "TO BUILT BETTER COMMUNICATION";
-secondText = " AND EMPATHETIC SOLUTIONS";
-thirdText = "TO TRANSLATE HUMAN NEEDS TO EXPERIENCES";
-intervalTime = 1000;
-window.load = displayText();
-function displayText() {
-  // display first text
-  document.querySelector('#dynamicContent').innerText = firstText;
-  // display second text
-  setTimeout(() => {
-    document.querySelector('#dynamicContent').innerText = secondText;
-  }, intervalTime * 12);
-  // display third text
-  setTimeout(() => {
-    document.querySelector('#dynamicContent').innerText = thirdText;
-  }, intervalTime * 9);
-}
-
-setInterval(() => {
-  displayText();
-}, intervalTime * 12);
